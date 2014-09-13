@@ -10,7 +10,7 @@ each('rgb', function (r) {
       var name = r + g + b;
       Object.defineProperty(Number.prototype, name, {
         get: new Function('rgba', 'r', 'g', 'b', 'return function ' + name + '() {' +
-          'return rgba(r(color), g(color), b(color), 255);' +
+          'return rgba(r(this), g(this), b(this), 255);' +
         '}')(rgba, getters[r], getters[g], getters[b]),
         enumerable: false
       });
@@ -24,8 +24,8 @@ each('rgba', function (r) {
       each('rgba', function (a) {
         var name = r + g + b + a;
         Object.defineProperty(Number.prototype, name, {
-          get: new Function('rgba', 'r', 'g', 'b', 'a', 'return function ' + name + '(color) {' +
-            'return rgba(r(color), g(color), b(color), a(color));' +
+          get: new Function('rgba', 'r', 'g', 'b', 'a', 'return function ' + name + '() {' +
+            'return rgba(r(this), g(this), b(this), a(this));' +
           '}')(rgba, getters[r], getters[g], getters[b], getters[a]),
           enumerable: false
         });
