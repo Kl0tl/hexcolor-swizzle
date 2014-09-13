@@ -1,0 +1,13 @@
+{
+  "name": "hexcolor-swizzle",
+  "main": "hexcolor-swizzle.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Kl0tl/hexcolor-swizzle",
+  "authors": [
+    "Cyril Sobierajewicz <sobierajewicz.cyril@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "hexcolor": "Kl0tl/hexcolor"
+  }
+}
