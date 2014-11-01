@@ -1,4 +1,4 @@
-import hexcolor from 'hexcolor';
+import * as hexcolor from 'hexcolor';
 
 var each = Function.prototype.call.bind(Array.prototype.forEach);
 
