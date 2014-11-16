@@ -1,0 +1,19 @@
+{
+  "name": "hexcolor-swizzle",
+  "version": "0.1.0",
+  "description": "hexcolor-swizzle [![Dependency Status](https://gemnasium.com/Kl0tl/hexcolor-swizzle.svg)](https://gemnasium.com/Kl0tl/hexcolor-swizzle) ================",
+  "main": "hexcolor-swizzle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kl0tl/hexcolor-swizzle.git"
+  },
+  "author": "Cyril Sobierajewicz <sobierajewicz.cyril@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kl0tl/hexcolor-swizzle/issues"
+  },
+  "homepage": "https://github.com/Kl0tl/hexcolor-swizzle"
+}
