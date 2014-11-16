@@ -1,4 +1,4 @@
-import { red, green, blue, alpha } from 'hexcolor';
+import { rgba, red, green, blue, alpha } from 'hexcolor';
 
 var each = Function.prototype.call.bind(Array.prototype.forEach);
 
