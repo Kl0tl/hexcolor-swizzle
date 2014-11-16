@@ -1,8 +1,8 @@
-import * as hexcolor from 'hexcolor';
+import { red, green, blue, alpha } from 'hexcolor';
 
 var each = Function.prototype.call.bind(Array.prototype.forEach);
 
-var getters = { r: hexcolor.red, g: hexcolor.green, b: hexcolor.blue, a: hexcolor.alpha };
+var getters = { r: red, g: green, b: blue, a: alpha };
 
 each('rgb', function (r) {
   each('rgb', function (g) {
