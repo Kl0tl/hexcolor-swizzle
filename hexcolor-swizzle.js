@@ -9,9 +9,9 @@ each('rgb', function (r) {
     each('rgb', function (b) {
       var name = r + g + b;
       Object.defineProperty(Number.prototype, name, {
-        get: new Function('rgba', 'r', 'g', 'b', 'return function ' + name + '() {' +
-          'return rgba(r(this), g(this), b(this), 255);' +
-        '}')(rgba, getters[r], getters[g], getters[b]),
+        get: new Function('rgba', 'r', 'g', 'b', 'a', 'return function ' + name + '() {' +
+          'return rgba(r(this), g(this), b(this), this > 0xffffff ? a(this) : 255);' +
+        '}')(rgba, getters[r], getters[g], getters[b], getters.a),
         enumerable: false
       });
     });
